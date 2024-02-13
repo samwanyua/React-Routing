@@ -7,7 +7,7 @@ const Booklist = () => {
             <br />
             <Link to="/books/2">Book 2</Link>
             <br />
-            <Link to="/books/knew">New Book</Link>
+            <Link to="/books/new">New Book</Link>
         </>
      );
 }
