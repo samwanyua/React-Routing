@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {BrowserRouter} from 'react-router-dom'
+import {StaticRouter} from 'react-router-dom/server'
+// specifically for working in the server
+// It doesn't allow you to change pages
+// Tells react which page you are currently rendering
+// crucial in serverside rendering
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <StaticRouter location="/books">
       <App />
-    </BrowserRouter>
+    </StaticRouter>
   </React.StrictMode>
 );
 
